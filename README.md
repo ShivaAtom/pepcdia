@@ -1,134 +1,164 @@
-```markdown
-# Ruta de Aprendizaje: Estadística y Probabilidad con Python — Temarios & Ejercicios
+-----
 
-¡Bienvenido! 🎯  
-Este repositorio es un curso práctico y por niveles pensado para que aprendas desde los fundamentos de Python y estadística hasta temas avanzados (Bayesiano, procesos estocásticos, inferencia causal, MLOps y despliegue). Contiene: ejercicios listos para copiar/pegar en notebooks, datos de ejemplo (.csv) por nivel y plantillas de prompt para pedir explicaciones sin obtener la solución.
+# 🎓 Ruta de Aprendizaje: Estadística y Probabilidad con Python
 
+### **De Analista a Científico de Datos con un Enfoque Práctico**
 
-## Contenido principal
-- Ejercicios por nivel: `ejercicios_nivel1.py` … `ejercicios_nivel8.py` (comentarios listos para notebook)
-- Datasets de ejemplo por nivel: `nivel1_dataset.csv` … `nivel8_dataset.csv`
-- Plantillas de prompt para pedir ayuda explicativa (sin soluciones)
-- Este README: guía rápida, rutas y recomendaciones
+-----
 
+## 🚀 ¡Bienvenido al Repositorio\!
 
-## Lenguaje y enfoque
-- Lenguaje principal: Python 3.9+ (compatible con 3.10/3.11)
-- Enfoque: práctico — copiar/pegar los comentarios en Jupyter/Colab y completar los ejercicios
-- Estilo pedagógico: incremental por niveles (de preliminar a experto y proyectos/MLOps)
+¡Hola y bienvenido a esta ruta de aprendizaje\! 🎯 Este es un **curso práctico** diseñado por niveles para que domines la estadística, la probabilidad y el machine learning desde los fundamentos de Python hasta temas avanzados como el aprendizaje bayesiano, inferencia causal y MLOps.
 
+**¿Qué encontrarás aquí?**
 
-## Instalación rápida (recomendado)
-1. Clona el repo:
-   git clone https://github.com/tu-usuario/tu-repo.git
-2. Crea entorno virtual:
-   python -m venv .venv && source .venv/bin/activate  # mac/linux
-   .venv\Scripts\activate                              # windows
-3. Instala dependencias (sugeridas básicas):
-   pip install -r requirements-basic.txt
-   (más abajo está la lista organizada por niveles)
+  - 🐍 **Ejercicios prácticos** listos para copiar/pegar en notebooks.
+  - 📂 **Datos de ejemplo (.csv)** organizados por nivel.
+  - ✍️ **Plantillas de `prompt`** para obtener ayuda conceptual sin recibir la solución.
+  - 🗺️ Este mismo README como tu **guía rápida** y mapa de ruta.
 
-Abre Jupyter Notebook / JupyterLab y copia los comentarios del archivo `ejercicios_nivelX.py` a celdas Markdown / código e inicia a resolver.
+-----
 
+## 🛠️ Instalación Rápida (Recomendada)
 
-## Lista de librerías recomendadas (por niveles)
-Nota: instalar por grupos según en qué nivel trabajes.
+Sigue estos sencillos pasos para empezar a trabajar de inmediato:
 
-- Básicas (Nivel 1 — 3)
-  - numpy, pandas, matplotlib, seaborn, scipy, jupyter
-- Modelado y ML (Nivel 3 — 6)
-  - scikit-learn, statsmodels, joblib, patsy, yellowbrick
-- Bayes y MCMC (Nivel 5)
-  - pymc, arviz, numpyro or cmdstanpy/pystan (elige uno), jax (para numpyro)
-- Series temporales / GARCH (Nivel 6)
-  - statsmodels, pmdarima, arch
-- Procesos estocásticos / GP / Deep (Nivel 4 — 7)
-  - gpflow or GPyTorch, tensorflow-probability (opcional), pyro (opcional)
-- Optimiz., ensambles y explainability (Nivel 6 — 8)
-  - xgboost, lightgbm, shap, optuna
-- MLOps & APIs (Nivel 8)
-  - fastapi, uvicorn, docker (CLI), locust, plotly
-- Utilidades
-  - jupyterlab, black, flake8, pre-commit
+1.  **Clona el repositorio:**
 
-Sugerencia: empieza instalando las básicas y añade otras librerías cuando llegues al nivel que las necesita.
+    ```bash
+    git clone https://github.com/ShivaAtom/pepcdia
+    ```
 
+2.  **Crea un entorno virtual:**
 
-## Estructura y ruta de estudio por niveles
-Cada nivel contiene ejercicios (30 + 1 integrador) y un dataset:
+    ```bash
+    # para macOS/Linux
+    python -m venv .venv && source .venv/bin/activate
 
-- Nivel 1 — Preliminar: Python básico, NumPy, Pandas, gráficas simples, reproducibilidad.
-  Resultado: manejar datos y notebooks con confianza.
-- Nivel 2 — Principiante: Probabilidad básica, distribuciones, EDA, bootstrap.
-  Resultado: interpretar distribuciones y estimar probabilidades empíricas.
-- Nivel 3 — Intermedio: Inferencia, pruebas, regresión lineal/logística, validación.
-  Resultado: diseñar y validar experimentos y modelos simples.
-- Nivel 4 — Intermedio-Avanzado: Probabilidad avanzada, MT/MC, cadenas de Markov, SDEs.
-  Resultado: implementar simulaciones y entender leyes límite.
-- Nivel 5 — Avanzado (Bayes): MCMC, PyMC/NumPyro/Stan, modelos jerárquicos, VI.
-  Resultado: formular e inferir modelos bayesianos; diagnosticar cadenas.
-- Nivel 6 — Avanzado: GLM, series temporales, PCA, clustering, supervivencia.
-  Resultado: modelado multivariante y forecasting.
-- Nivel 7 — Experto: Valores extremos, GPs avanzados, inferencia causal, deep probabilístico.
-  Resultado: técnicas de investigación y modelado en problemas reales de alto riesgo.
-- Nivel 8 — Proyectos & MLOps: despliegue, contenedores, CI, monitorización, privacidad y ética.
-  Resultado: llevar modelos a producción con buenas prácticas de gobernanza y monitoreo.
+    # para Windows
+    .venv\Scripts\activate
+    ```
 
+3.  **Instala las dependencias básicas:**
 
-## ¿Quién debería usar esto?
-- Estudiantes y profesionales que:
-  - Quieran pasar de “analista” a “científico/ingeniero de datos” con base estadística sólida.
-  - Buscan practicar con ejercicios reales y datasets sintéticos realistas.
-  - Desean aprender Bayes, simulación y despliegue de modelos.
-- Requisitos previos sugeridos:
-  - Nociones básicas de programación; para niveles avanzados conviene tener algebra/estadística básica.
+    ```bash
+    pip install -r requirements-basic.txt
+    ```
 
+**¡Listo\!** Ahora solo tienes que abrir Jupyter Notebook o JupyterLab, copiar los ejercicios del archivo `ejercicios_nivelX.py` y empezar a resolverlos.
 
-## ¿Qué sabrás hacer al terminar?
-Progresión esperada (resumen):
-- Tras Nivel 1–3: EDA profesional, pruebas de hipótesis, regresión y modelos básicos.
-- Tras Nivel 4–5: Simulaciones Monte Carlo, MCMC, modelos jerárquicos y ajuste bayesiano.
-- Tras Nivel 6–7: Modelos complejos (GLM, GARCH, GP), análisis de colas, causalidad y técnicas de investigación.
-- Tras Nivel 8: Despliegue reproducible, CI/CD, monitorización, fairness y privacidad en producción.
+-----
 
-En resumen: desde prototipado de análisis hasta diseño, validación y despliegue de modelos robustos.
+## 📦 Librerías por Nivel
 
+Para una experiencia más limpia y eficiente, te recomiendo instalar las librerías conforme las necesites.
 
-## Cómo usar las plantillas de prompt
-En cada nivel hay un archivo `prompt_explicar_nivelX.txt`.  
-Copia el contenido tal cual y añade el enunciado del ejercicio. El asistente te responderá en español, en tono coloquial, con:
-1. Conceptos relevantes.
-2. Funciones/librerías y parámetros clave.
-3. Fórmulas (si las hay) explicadas (sin resolver).
-4. Mini‑ejemplo aclaratorio.
-5. Pasos sugeridos para que lo intentes.
+### 📚 Básicas (Nivel 1-3)
 
-Ideal para pedir ayuda conceptual sin obtener la solución completa.
+  - `numpy`, `pandas`, `matplotlib`, `seaborn`, `scipy`, `jupyter`
 
+### 🤖 Modelado y ML (Nivel 3-6)
 
-## Ejemplo de flujo de trabajo recomendado
-1. Abre el dataset del nivel (pandas).
-2. Copia uno o dos ejercicios a tu notebook.
-3. Implementa soluciones y documenta en Markdown.
-4. Usa la plantilla de prompt si te quedas atascado para recibir apoyo conceptual.
-5. Realiza el ejercicio integrador del nivel.
-6. Guarda resultados y artefactos (parquet, modelos serializados).
+  - `scikit-learn`, `statsmodels`, `joblib`, `patsy`, `yellowbrick`
 
-## Sugerencia de tiempo (orientativa)
-- Intensivo: 1 nivel ≈ 2–6 semanas (dependiendo del nivel y práctica).
-- Autoestudio a ritmo moderado: 1 nivel ≈ 1–3 meses.
-- El camino completo (todos los niveles): 12–24 meses con práctica consistente.
+### 🧠 Bayes y MCMC (Nivel 5)
 
+  - `pymc`, `arviz`, `numpyro` o `cmdstanpy`/`pystan`, `jax` (para `numpyro`)
 
-## Buenas prácticas incluidas
-- Reproducibilidad (seeds, entornos, requirements)
-- Control de versiones (git)
-- Documentación en notebooks y Markdown
-- Test simples y pipelines reproducibles
+### 📈 Series Temporales (Nivel 6)
 
----
+  - `statsmodels`, `pmdarima`, `arch`
 
-## Créditos
-- Autor del material: ShivaAtom
+### 🌐 Procesos Estocásticos (Nivel 4-7)
 
----
+  - `gpflow` o `GPyTorch`, `tensorflow-probability` (opcional), `pyro` (opcional)
+
+### 🚀 Optimización y MLOps (Nivel 6-8)
+
+  - `xgboost`, `lightgbm`, `shap`, `optuna`, `fastapi`, `uvicorn`, `docker`, `locust`
+
+-----
+
+## 🗺️ Mapa de la Ruta de Aprendizaje
+
+Cada nivel incluye más de 30 ejercicios prácticos y un dataset único.
+
+### **Nivel 1 — Preliminar 👶**
+
+  - **Temas:** Python, NumPy, Pandas, visualización básica.
+  - **Resultado:** Manejar datos y notebooks con confianza.
+
+### **Nivel 2 — Principiante 🧑‍💻**
+
+  - **Temas:** Probabilidad, distribuciones, análisis exploratorio de datos (EDA), `bootstrap`.
+  - **Resultado:** Interpretar distribuciones y estimar probabilidades empíricas.
+
+### **Nivel 3 — Intermedio I 📊**
+
+  - **Temas:** Inferencia, pruebas de hipótesis, regresión lineal y logística.
+  - **Resultado:** Diseñar y validar experimentos y modelos simples.
+
+### **Nivel 4 — Intermedio II 🔄**
+
+  - **Temas:** Probabilidad avanzada, Monte Carlo, cadenas de Markov, Ecuaciones Diferenciales Estocásticas (SDEs).
+  - **Resultado:** Implementar simulaciones y entender leyes límite.
+
+### **Nivel 5 — Avanzado (Bayesiano) 🔬**
+
+  - **Temas:** MCMC, PyMC/NumPyro, modelos jerárquicos, Inferencia Variacional (VI).
+  - **Resultado:** Formular e inferir modelos bayesianos y diagnosticar cadenas.
+
+### **Nivel 6 — Avanzado I 🌌**
+
+  - **Temas:** Modelos Lineales Generalizados (GLM), series temporales, PCA, clustering.
+  - **Resultado:** Dominar el modelado multivariante y el `forecasting`.
+
+### **Nivel 7 — Experto 🧠**
+
+  - **Temas:** Valores extremos, Procesos Gaussianos (GP), inferencia causal, `deep learning` probabilístico.
+  - **Resultado:** Aplicar técnicas de investigación en problemas complejos.
+
+### **Nivel 8 — Proyectos & MLOps 🚀**
+
+  - **Temas:** Despliegue de modelos, contenedores, CI/CD, monitorización, ética.
+  - **Resultado:** Llevar modelos a producción con buenas prácticas y gobernanza.
+
+-----
+
+## 💡 Flujo de Trabajo Sugerido
+
+Sigue estos pasos para optimizar tu aprendizaje:
+
+1.  **Carga** el dataset del nivel con Pandas.
+2.  **Copia** uno o dos ejercicios en tu notebook.
+3.  **Implementa** las soluciones y documéntalas.
+4.  Si te atascas, usa la **plantilla de `prompt`** para recibir ayuda conceptual.
+5.  **Completa** el ejercicio integrador.
+6.  **Guarda** tus resultados y artefactos.
+
+-----
+
+## ⏳ Estimación de Tiempo
+
+  - **Intensivo:** 1 nivel ≈ 2-6 semanas.
+  - **Ritmo moderado:** 1 nivel ≈ 1-3 meses.
+  - **Camino completo:** 12-24 meses con práctica constante.
+
+-----
+
+## ✅ ¡Tu Progresión Esperada\!
+
+Al finalizar esta ruta, serás capaz de:
+
+  - **Nivel 1-3:** Realizar un EDA profesional y crear modelos básicos.
+  - **Nivel 4-5:** Desarrollar simulaciones Monte Carlo y modelos bayesianos.
+  - **Nivel 6-7:** Abordar modelos complejos, causalidad y técnicas de investigación.
+  - **Nivel 8:** Desplegar modelos de manera reproducible y con buenas prácticas.
+
+En resumen: **pasarás de analizar datos a diseñar, validar y desplegar modelos robustos en producción.** ¡El viaje vale la pena\!
+
+-----
+
+### **Créditos**
+
+  - Autor del material: [ShivaAtom](https://www.google.com/search?q=https://github.com/ShivaAtom)
