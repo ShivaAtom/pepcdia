@@ -4,7 +4,6 @@
 ¡Bienvenido! 🎯  
 Este repositorio es un curso práctico y por niveles pensado para que aprendas desde los fundamentos de Python y estadística hasta temas avanzados (Bayesiano, procesos estocásticos, inferencia causal, MLOps y despliegue). Contiene: ejercicios listos para copiar/pegar en notebooks, datos de ejemplo (.csv) por nivel y plantillas de prompt para pedir explicaciones sin obtener la solución.
 
----
 
 ## Contenido principal
 - Ejercicios por nivel: `ejercicios_nivel1.py` … `ejercicios_nivel8.py` (comentarios listos para notebook)
@@ -12,14 +11,12 @@ Este repositorio es un curso práctico y por niveles pensado para que aprendas d
 - Plantillas de prompt para pedir ayuda explicativa (sin soluciones)
 - Este README: guía rápida, rutas y recomendaciones
 
----
 
 ## Lenguaje y enfoque
 - Lenguaje principal: Python 3.9+ (compatible con 3.10/3.11)
 - Enfoque: práctico — copiar/pegar los comentarios en Jupyter/Colab y completar los ejercicios
 - Estilo pedagógico: incremental por niveles (de preliminar a experto y proyectos/MLOps)
 
----
 
 ## Instalación rápida (recomendado)
 1. Clona el repo:
@@ -33,7 +30,6 @@ Este repositorio es un curso práctico y por niveles pensado para que aprendas d
 
 Abre Jupyter Notebook / JupyterLab y copia los comentarios del archivo `ejercicios_nivelX.py` a celdas Markdown / código e inicia a resolver.
 
----
 
 ## Lista de librerías recomendadas (por niveles)
 Nota: instalar por grupos según en qué nivel trabajes.
@@ -57,7 +53,6 @@ Nota: instalar por grupos según en qué nivel trabajes.
 
 Sugerencia: empieza instalando las básicas y añade otras librerías cuando llegues al nivel que las necesita.
 
----
 
 ## Estructura y ruta de estudio por niveles
 Cada nivel contiene ejercicios (30 + 1 integrador) y un dataset:
@@ -79,7 +74,6 @@ Cada nivel contiene ejercicios (30 + 1 integrador) y un dataset:
 - Nivel 8 — Proyectos & MLOps: despliegue, contenedores, CI, monitorización, privacidad y ética.
   Resultado: llevar modelos a producción con buenas prácticas de gobernanza y monitoreo.
 
----
 
 ## ¿Quién debería usar esto?
 - Estudiantes y profesionales que:
@@ -89,7 +83,6 @@ Cada nivel contiene ejercicios (30 + 1 integrador) y un dataset:
 - Requisitos previos sugeridos:
   - Nociones básicas de programación; para niveles avanzados conviene tener algebra/estadística básica.
 
----
 
 ## ¿Qué sabrás hacer al terminar?
 Progresión esperada (resumen):
@@ -100,7 +93,6 @@ Progresión esperada (resumen):
 
 En resumen: desde prototipado de análisis hasta diseño, validación y despliegue de modelos robustos.
 
----
 
 ## Cómo usar las plantillas de prompt
 En cada nivel hay un archivo `prompt_explicar_nivelX.txt`.  
@@ -113,7 +105,6 @@ Copia el contenido tal cual y añade el enunciado del ejercicio. El asistente te
 
 Ideal para pedir ayuda conceptual sin obtener la solución completa.
 
----
 
 ## Ejemplo de flujo de trabajo recomendado
 1. Abre el dataset del nivel (pandas).
@@ -123,14 +114,11 @@ Ideal para pedir ayuda conceptual sin obtener la solución completa.
 5. Realiza el ejercicio integrador del nivel.
 6. Guarda resultados y artefactos (parquet, modelos serializados).
 
----
-
 ## Sugerencia de tiempo (orientativa)
 - Intensivo: 1 nivel ≈ 2–6 semanas (dependiendo del nivel y práctica).
 - Autoestudio a ritmo moderado: 1 nivel ≈ 1–3 meses.
 - El camino completo (todos los niveles): 12–24 meses con práctica consistente.
 
----
 
 ## Buenas prácticas incluidas
 - Reproducibilidad (seeds, entornos, requirements)
