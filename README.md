@@ -3,6 +3,9 @@
 # 🎓 Ruta de Aprendizaje: Estadística y Probabilidad con Python
 
 ### **De Analista a Científico de Datos con un Enfoque Práctico**
+-----
+
+<img src="GIT/pepcdia.png" alt="Mi imagen" width="300" />
 
 -----
 
